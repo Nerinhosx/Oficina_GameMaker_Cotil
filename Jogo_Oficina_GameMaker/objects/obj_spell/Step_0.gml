@@ -2,5 +2,10 @@
 // Você pode escrever seu código neste editor
 
 if(instance_exists(obj_enemy_orc)){
-	motion_set(dir, 5);
+	if(global.pausa==false){
+		motion_set(dir, 5);
+	}
+	else{
+		motion_set(dir, 0);
+	}
 }
